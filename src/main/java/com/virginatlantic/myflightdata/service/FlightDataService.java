@@ -3,12 +3,13 @@ package com.virginatlantic.myflightdata.service;
 import com.virginatlantic.myflightdata.model.FlightDto;
 
 import java.text.ParseException;
+import java.util.Date;
 import java.util.List;
 
 public interface FlightDataService {
 
-    List<FlightDto> processInputFile(String fileName,String flightDate);
+    void loadCSVFlightData();
 
-    List<FlightDto> findFlightDays(List<FlightDto> flights, String flightDate) throws ParseException;
+    List<FlightDto> findFlightDays(Date flightDate) throws ParseException;
 
 }

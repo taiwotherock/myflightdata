@@ -13,7 +13,7 @@ gradlew clean test --info
 
 You can also test this service using Postman collection by calling endpoint below using GET method
 
-http://localhost:8084/flightdata/flights?flightDate=2022-04-30&flightFileName=flights.csv
+http://localhost:8084/flightdata/flights?flightDate=2022-04-30
 
 ## Swagger Open API Documentation ##
 
